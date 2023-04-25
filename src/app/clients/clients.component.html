@@ -1,0 +1,21 @@
+
+
+<div class="container mt-2">
+  <button routerLink="new" class="btn btn-success mb-4">New Client</button>
+  <router-outlet></router-outlet>
+  <hr>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let client of clients$ | async">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ client.name }}</h5>
+
+          <a [routerLink]="['edit', client.id]" class="btn btn-dark">Edit client</a>
+          <button (click)="delete(client.id)" class="btn btn-danger">Remove client</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

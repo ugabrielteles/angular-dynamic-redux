@@ -1,0 +1,16 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "name": "Mestre dos Magos222"
+    },
+    {
+      "id": 2,
+      "name": "Teste2"
+    },
+    {
+      "id": 4,
+      "name": "Gabriel Teles"
+    }
+  ]
+}
